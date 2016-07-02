@@ -3,15 +3,12 @@
 <html>
 <head>
     
-    
-    <title>Learning jQuery</title>
+    <title>Ajax</title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    
+
     <style type="text/css">
-     
      
   #circle
     {
@@ -37,31 +34,30 @@
         </script>
 </head>
 <body>
-   
- <p>Hello World</p>
- 
- <button type="submit" onclick="fade()">FadeOut</button>
- <button type="submit" onclick="show()">Show</button>
- 
- 
+
+
+<h1>Asychronous Javascript And XML</h1>
+
+
+ <script>  
     
-    <script>
-        
-  //manipulate the text with the circle.
-        
-   function fade(){
-         
-          $("p").fadeOut(2000);
+    $("div").click(function(){
             
-        };
-          function show(){
-         
-          $("p").show();
-            
-        };
+            //increase circle
+            $(this).animate(
+                {
+                   width:"300px",
+                   height:"300px",
+                   marginLeft:"200px"
+                }, 800
+                
+            );
      
+          });
   </script>
         
   </body>
         
  </html>       
+
+

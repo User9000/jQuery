@@ -38,27 +38,30 @@
 </head>
 <body>
    
- <p>Hello World</p>
- 
- <button type="submit" onclick="fade()">FadeOut</button>
- <button type="submit" onclick="show()">Show</button>
- 
+<div  id="circle"></div>
  
     
     <script>
         
   //manipulate the text with the circle.
         
-   function fade(){
+  
          
-          $("p").fadeOut(2000);
+        $("div").click(function(){
             
-        };
-          function show(){
-         
-          $("p").show();
-            
-        };
+            //increase circle
+            $(this).animate(
+                {
+                   width:"300px",
+                   height:"300px",
+                   marginLeft:"200px"
+                }, 800
+                
+            );
+              
+              
+              
+          });
      
   </script>
         
