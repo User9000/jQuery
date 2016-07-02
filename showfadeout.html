@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+<head>
+    
+    
+    <title>Learning jQuery</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    <style type="text/css">
+     
+     
+     #circle
+    {
+        background-color: green;
+        width: 150px;
+        height:150px;
+        border-radius: 50%;
+        margin: 35px;
+    }
+
+
+    .box
+    {
+        background-color: red;
+        width: 150px;
+        height:150px;
+        margin: 35px;
+    }
+
+    </style>    
+    
+    <script type="text/javascript"  src="jquery.min.js">
+        </script>
+</head>
+<body>
+   
+ <p>Hello World</p>
+ 
+ <button type="submit" onclick="fade()">FadeOut</button>
+ <button type="submit" onclick="show()">Show</button>
+ 
+ 
+    
+    <script>
+        
+        //manipulate the text with the circle.
+        
+   function fade(){
+         
+          $("p").fadeOut();
+            
+        };
+          function show(){
+         
+          $("p").show();
+            
+        };
+     
+     </script>
+        
+        
+        
